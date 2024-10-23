@@ -1,0 +1,42 @@
+/* Kanban board container */
+.kanban-board {
+  display: flex;
+  flex-wrap: wrap;  /* Allow the Kanban columns to wrap to new rows */
+  gap: 15px;
+  padding: 15px;
+  background-color: transparent;  /* Remove background of the entire board */
+  justify-content: flex-start;  /* Align columns to the left */
+  align-items: flex-start;  /* Align rows to the top */
+}
+
+/* Kanban columns */
+.kanban-column {
+  flex: 1 1 100%;  /* Columns will take up full width by default */
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  /* Add space between cards */
+}
+
+/* Task card */
+.task-card {
+  width: 260px;  /* Adjust card width */
+  margin-bottom: 15px;  /* Space between cards */
+}
+
+/* Control buttons or dropdowns */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 6px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+}
